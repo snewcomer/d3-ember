@@ -1,0 +1,25 @@
+.flex {
+  display: flex;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.tooltip-arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 9px solid black;
+  position: absolute;
+  opacity: 0.8;
+  bottom: -9px;
+
+}
+
+rect {
+  cursor: pointer;
+}

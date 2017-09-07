@@ -1,0 +1,21 @@
+<div class="flex">
+  <div class="flex-auto">
+    {{bar-chart 
+      data=authorData
+      selectedLabel=selectedAuthor
+      on-click=(action "toggleBar" "selectedAuthor")}}
+    <h2>
+      Authors
+      {{#if selectedAuthor}}
+        ( {{selectedAuthor}} )
+      {{/if}}
+    </h2>
+  </div>
+  <div class="flex-auto">
+    {{bar-chart 
+      data=authorData
+      selectedLabel=selectedComment
+      on-click=(action "toggleBar" "selectedComment")}}
+    <h2>Comments</h2>
+  </div>
+</div>
